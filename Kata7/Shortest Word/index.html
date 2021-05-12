@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        function findShort(s){
+            var shortestWord = s.split(' ').reduce((short, current) => {
+                return current.length < short.length ? current : short;
+            })
+            console.log('Najkraca rec: ', shortestWord, ' ima duzinu od: ', shortestWord.length, ' karaktera')
+        }
+        findShort('bitcoin take over the world maybe who knows perhaps')
+    </script>
+</body>
+</html>

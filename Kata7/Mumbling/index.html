@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        function accum(s) {
+            var result = s.split('').map((x, idx) => 
+                x = x.toUpperCase() + x.toLowerCase().repeat(idx) + '-'
+            ).join('').slice(0, -1)
+            console.log(result)
+        }
+
+        accum('ZpglnRxqenU');
+    </script>
+</body>
+</html>
